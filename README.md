@@ -27,6 +27,7 @@ Specifically, in order to find the best model of exponential phase, the "raw" OD
 3. Best-fit R^2 value must be >0.99 to classify as a valid fit to filter out fitting to subpar data
 4. Minimum window size must include at least 100 minutes of culture time and 8 measurements
 
+The code controlling all of these constraints can be found in the "well_fitter" function and its "find_linear_regime" sub-function.
 
 ## Sampling, variables, and naming
 This pipeline was developed for utility of bench-facing scientists in mind: in order to designate different samples, blank wells, and wells to drop from analysis, they simply need to designate these labels in a second sheet on their data file **as designated in Section** . Based on these conventions, the program automatically identifies replicates, background subtracts samples using the blank wells, and names samples according to their well and collected variable attributes. 
