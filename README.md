@@ -70,7 +70,7 @@ The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Me
 
 
 ### Note on example_data
-Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with a lot of missing or poor growth curves, which has resulted in many gaps in our final parameter fits as seen above. While this is represents a disappointing day for a scientist, it's a great dataset to use when building a platform like this to ensure that messy data doesn't trip up your analysis and that your fit parameters are tuned well! Hopefully, all of the datasets you analyze with this package will look better than this example. :)
+Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with a lot of missing or poor growth curves, which has resulted in many gaps in our final parameter fits as seen above. While these data represent a disappointing day for a scientist, they comprised a great training dataset to use when building this platform to ensure that messy data doesn't trip up analysis and that fitting parameters are tuned well! Hopefully, all of the datasets you analyze with this package will look better than this example. :)
 
 ## To-do
 ### Possible future updates:
