@@ -18,7 +18,7 @@ In the sample column, use 'blank' for blank wells and 'drop' to ignore wells.
 ![image](https://github.com/user-attachments/assets/eb9fbf5e-66eb-46b0-8603-df2f1f6b400d)
 
 
-## 4. Open the growth_rates script in Jupyter Notebooks or JupyterLab and modify the 'file_target' variable to a string uniquely contained by the files in the /xlsx folder that you want to analyze.
+## 4. Open the growth_rates script in Jupyter Notebooks or JupyterLab and modify the 'file_target' variable to a string uniquely contained by the files in the "../xlsx/" folder that you want to analyze.
 
 
 ![image](https://github.com/user-attachments/assets/da872eb3-72fb-43bd-96d0-4e564af42fae)
