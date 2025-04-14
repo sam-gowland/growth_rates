@@ -75,7 +75,7 @@ The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Me
 
 
 ### Note on example_data
-Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with many missing or poor growth curves, which has resulted in many gaps in our final parameter fits as seen above. While these data represent a disappointing day for a scientist, they comprised a great training dataset to use when building this platform to ensure that messy data doesn't trip up analysis and that fitting parameters are tuned well! Hopefully, all of the datasets you analyze with this script will look better than this example. :)
+Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with many missing or poor growth curves, which has resulted in many gaps in our final parameter fits as seen above. While these data represent a disappointing day for a scientist, they comprised a great training dataset to use when building this script to ensure that messy data doesn't trip up analysis and that fitting parameters are tuned well! Hopefully, all of the datasets you analyze with this script will look better than this example. :)
 
 ## Extensibility
 One of the primary motivations for this script is the ability to automate analysis of growth rate data in high-throughput. As such, it's designed to accept and analyze as many data files as you'd like to give it at once. For best results, make sure variable column labels match across all analyzed files.
