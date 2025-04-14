@@ -53,6 +53,7 @@ For example, using file_target 'expt' will find and analyze '/expt1.xlsx', '/exp
 ### Possible future updates:
 * Providing additional import functionality for a range of Excel raw data formats
 * Adding API support for plugging into larger experimental workflows that use growth parameters for model training
+* Graphical outputs
 * Adding support for fitting growth data to the Gompertz curve
 * More metadata functionality when analyzing large datasets with many experiments
 
