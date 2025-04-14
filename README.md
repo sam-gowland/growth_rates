@@ -27,7 +27,7 @@ However, this relationship is only linear for a short time during exponential ph
 1. OD600 values are forced to increase at least ~4.5-fold over the time window to filter out non-exponential phase fits.
 2. OD600 value at the end of the fitted time window must be at least ~0.05 to filter out fits from noise at low absorbances.
 3. Best-fit R^2 value must be >0.99 to classify as a valid fit to filter out fitting to subpar data.
-4. Window must must include at least 100 minutes of culture time and 8 measurements.
+4. Fit window must must include at least 100 minutes of culture time and 8 measurements.
 
 The code determining all of these constraints can be found in the "well_fitter" function and its "find_linear_regime" sub-function.
 
