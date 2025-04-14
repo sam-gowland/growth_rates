@@ -89,4 +89,7 @@ One of the primary motivations for this script is the ability to automate analys
 * Adding support for fitting growth data to the Gompertz curve
 * More metadata functionality when analyzing large datasets with many experiments
 
+## Contact
+I love talking about science and hearing that people are using my work! If you have any questions about how to use growth rates or suggestions on how to make it better, feel free to connect with me on LinkedIn at https://www.linkedin.com/in/samgowland/
+
 
