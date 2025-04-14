@@ -41,7 +41,7 @@ However, this relationship is only linear for a short time during exponential ph
 The code determining all of these constraints can be found in the "well_fitter" function and its "find_linear_regime" sub-function.
 
 ## Sampling, variables, and naming
-This pipeline was developed for utility of bench-facing scientists in mind: in order to designate different samples, blank wells, and wells to drop from analysis, they simply need to designate variable attributes in a second sheet on their data file with column labels designated in row 2 (for reference, check the associated example_data). Based on these conventions, the program automatically identifies replicates, background subtracts samples using the blank wells, and IDs samples according to their well and collected variable attributes. For example:
+This pipeline was developed for utility of bench-facing scientists in mind: in order to designate different samples, blank wells, and wells to drop from analysis, you simply need to designate variable attributes in a second sheet on their data file with column labels designated in row 2 (for reference, check the associated example_data). Based on these conventions, the program automatically identifies replicates, background subtracts samples using the blank wells, and IDs samples according to their well and collected variable attributes. For example:
 
 
 ![image](https://github.com/user-attachments/assets/eb9fbf5e-66eb-46b0-8603-df2f1f6b400d)
