@@ -10,6 +10,8 @@ This is a guide to get growth_rates running as quickly and simply as possible on
 
 
 ## 3. Define variables on Sheet 2 of your data file.
+Be sure to include columns labeled "Well", "Sample", and "Media" and DO NOT include columns labeled "Assay", "Temperature", "Value", or "Experiment".
+
 In the sample column, use 'blank' for blank wells and 'drop' to ignore wells. 
 
 
