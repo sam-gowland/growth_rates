@@ -50,8 +50,27 @@ Make sure this script is saved in the same folder as a folder labeled 'xlsx' con
 
 Additionally, ***you will need to modify the file_target variable to a string that is contained in the data files you want to analyze.*** Multiple data files can be analyzed at once if they all contain this same string. Note that these files will each be assigned a unique label by file name under the 'Experiment' column in the resulting dataframe.
 
-For example, using file_target 'expt' will find and analyze '/expt1.xlsx', '/expt2.xlsx', and '/expt3.xlsx' in the 'xlsx' folder together, then tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
+For example, using file_target 'expt' will find and analyze '/expt1.xlsx', '/expt2.xlsx', and '/expt3.xlsx' in the 'xlsx' folder together, and the script will tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
 
+
+## Outputs
+
+The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Mean fits by grouped replicates.xlsx". 
+
+"Best fits by well.xlsx" displays best fit parameters for each individual well:
+* Growth rate (/hr) is the culture's derived growth rate.
+* logT Y-intercept is the Y-intercept of the linear equation of best fit on log-transformed y-data. This can be ignored for most applications.
+* R2 is the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination).
+* XTimeStart and XTimeStop are the start and stop time value in hours where the best fit window was found.
+
+![image](https://github.com/user-attachments/assets/972ec51b-9cd1-4d5b-953f-bc84300de2ea)
+
+"Mean fits by grouped replicates.xlsx" displays the mean and standard deviation of the above statistics across curves identified as replicates. It also shows which wells are included in the replicate group, displays how many replicates generated a valid fit for each sample, and derives a value for doubling time from the average growth rate.
+![image](https://github.com/user-attachments/assets/3c67e77d-ba83-42c1-8893-c1e48ee32d60)
+
+
+### Note on example_data
+Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with a lot of missing or poor growth curves. While this is represents a disappointing day for a scientist, it's a great dataset to use when building a platform like this to ensure that messy data doesn't trip up your analysis and that your fit parameters are tuned well! Hopefully, all of the datasets you analyze with this package will look better than this example. :)
 
 ## To-do
 ### Possible future updates:
