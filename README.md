@@ -74,7 +74,7 @@ The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Me
 ![image](https://github.com/user-attachments/assets/3c67e77d-ba83-42c1-8893-c1e48ee32d60)
 
 
-### Note on example_data
+### Note on example data
 Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with many missing or poor growth curves, which has resulted in many gaps in our final parameter fits as seen above. While these data represent a disappointing day for a scientist, they comprised a great training dataset to use when building this script to ensure that messy data doesn't trip up analysis and that fitting parameters are tuned well! Hopefully, all of the datasets you analyze with this script will look better than this example. :)
 
 ## Extensibility
