@@ -70,20 +70,22 @@ The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Me
 ![image](https://github.com/user-attachments/assets/972ec51b-9cd1-4d5b-953f-bc84300de2ea)
 
 "Mean fits by grouped replicates.xlsx" displays the mean and standard deviation of the above statistics across curves identified as replicates. It also shows which wells are included in the replicate group, displays how many replicates generated a valid fit for each sample, and derives a value for doubling time from the average growth rate.
+
 ![image](https://github.com/user-attachments/assets/3c67e77d-ba83-42c1-8893-c1e48ee32d60)
 
 
 ### Note on example_data
-Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with a lot of missing or poor growth curves, which has resulted in many gaps in our final parameter fits as seen above. While these data represent a disappointing day for a scientist, they comprised a great training dataset to use when building this platform to ensure that messy data doesn't trip up analysis and that fitting parameters are tuned well! Hopefully, all of the datasets you analyze with this script will look better than this example. :)
+Sometimes in science (especially when working with tiny bugs with messy computers for brains!) things don't go as planned. This dataset is messy, with many missing or poor growth curves, which has resulted in many gaps in our final parameter fits as seen above. While these data represent a disappointing day for a scientist, they comprised a great training dataset to use when building this platform to ensure that messy data doesn't trip up analysis and that fitting parameters are tuned well! Hopefully, all of the datasets you analyze with this script will look better than this example. :)
 
 ## Extensibility
-One of the primary motivations for this script is the ability to automate analysis of growth rate data in high-throughput. As such, it's designed to accept and analyze as many data files as you'd like to give it at once. For best results, make sure all variable column labels match across all analyzed files.
+One of the primary motivations for this script is the ability to automate analysis of growth rate data in high-throughput. As such, it's designed to accept and analyze as many data files as you'd like to give it at once. For best results, make sure variable column labels match across all analyzed files.
 
 ## To-do
 ### Possible future updates:
 * Providing additional import functionality for a range of Excel raw data formats
 * Adding API support for plugging into larger experimental workflows that use growth parameters for model training
 * More graphical outputs
+* Small updates that continue to make script more user-friendly and accessible to non-programmers
 * Adding support for fitting growth data to the Gompertz curve
 * More metadata functionality when analyzing large datasets with many experiments
 
