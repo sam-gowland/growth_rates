@@ -63,7 +63,7 @@ The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Me
 
 "Best fits by well.xlsx" displays best fit parameters for each individual well:
 * Growth rate (/hr) is the culture's derived growth rate.
-* logT Y-intercept is the Y-intercept of the linear equation of best fit on log-transformed y-data. This can be ignored for most applications.
+* logT Y-intercept is the Y-intercept of the linear equation of best fit on log-transformed y-data. This can usually be ignored.
 * R2 is the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination).
 * XTimeStart and XTimeStop are the start and stop time value in hours where the best fit window was found.
 
