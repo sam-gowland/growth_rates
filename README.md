@@ -10,7 +10,7 @@ Bacteria and other microorganisms grown in liquid culture is typically modeled i
 3. **stationary phase**, where the culture is now so dense that microbes must compete for limited resources and slow their growth to increase long-term chances of survival, and
 4. **death phase**, where nutrients are depleted to the point that the culture experiences a large-scale die-off.
 
-Of these four phases, *we are typically interested in modeling exponential phase*, as this can provide insight into the organism's fitness under given culture conditions with no other competing factors.
+Of these four phases, *we are typically interested in modeling exponential phase*, as this can provide insight into the organism's fitness under optimal culture conditions with no other competing factors.
 
 Shown in the image below you can see the first three phases of the growth of bacteria in liquid culture: exponential phase has been modeled by a black curve superimposed on the blue raw data values, with lag phase preceding and stationary phase following exponential phase. growth_rates generated the black model curve as the best overall fit to the blue data curve.
 
