@@ -59,7 +59,7 @@ For example, using file_target 'expt' will find and analyze '/expt1.xlsx', '/exp
 
 ## Outputs
 
-The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Mean fits by grouped replicates.xlsx". 
+The outputs of this script are two Excel files, "Best fits by well.xlsx" and "Mean fits by grouped replicates.xlsx". This is done so that these final parameter values can be plugged in to the graphing / visualization tool of your choice.
 
 "Best fits by well.xlsx" displays best fit parameters for each individual well:
 * Growth rate (/hr) is the culture's derived growth rate.
