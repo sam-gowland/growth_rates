@@ -16,14 +16,14 @@ In the sample column, use 'blank' for blank wells and 'drop' to ignore wells.
 ![image](https://github.com/user-attachments/assets/eb9fbf5e-66eb-46b0-8603-df2f1f6b400d)
 
 
-## 4. Open the growth_rates script in Jupyter Notebooks or JupyterLab and modify the 'file_target' variable to a string uniquely contained by the files in /xlsx that you want to analyze.
+## 4. Open the growth_rates script in Jupyter Notebooks or JupyterLab and modify the 'file_target' variable to a string uniquely contained by the files in the /xlsx folder that you want to analyze.
 
 
 ![image](https://github.com/user-attachments/assets/da872eb3-72fb-43bd-96d0-4e564af42fae)
 
 
 
-## 5. Run the script. Make sure to run both the first cell and second cell. Your results will be output to Excel files stored in 'results/(your file_target)/'
+## 5. Run the script. Make sure to run both the first cell and second cell. Your results will be output to Excel files stored in the '/results/(your file_target)/' folder.
 
 
 ![image](https://github.com/user-attachments/assets/1611daa3-1ce0-45bd-852d-16659d37083d)
