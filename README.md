@@ -39,7 +39,7 @@ This pipeline was developed for utility of bench-facing scientists in mind: in o
 
 As many other non-essential column labels and attributes as desired can be designated, with analysis automatically using variable attributes from all columns except "Well" to identify sample replicates. If multiple plates/experiments are being analyzed at once, it is recommended to ensure that column labels are consistent across all plates.
 
-**DO NOT DESIGNATE** label variable attribute columns as any of the following, as these labels are generated and used internally by the program:\
+**DO NOT DESIGNATE** column labels as any of the following, as these labels are generated and used internally by the program:\
  ["Assay", "Temperature", "Value, "Experiment"]
 
 
