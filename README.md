@@ -81,19 +81,8 @@ Sometimes in science (especially when working with tiny bugs with messy computer
 One of the primary motivations for this script is the ability to automate analysis of growth rate data in high-throughput. As such, it's designed to accept and analyze as many data files as you'd like to give it at once. For best results, make sure variable column labels match across all analyzed files.
 
 ## Dependencies
-growth_rates has the following package dependencies:
-* glob
-* pandas
-* numpy
-* scipy
-* re
-* warnings
-* os
-* pathlib
-* math
-* time
-* functools
-
+growth_rates has the following package dependencies, which are likely pre-installed if using Jupyter Notebooks via Anaconda:
+pandas, numpy, scipy, math, glob, re, warnings, os, pathlib, time, functools
 
 ## To-do
 ### Possible future updates:
