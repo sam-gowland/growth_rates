@@ -1,6 +1,6 @@
 # growth_rates
 
-This repo is for quickly determining bacterial growth rates from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization.
+This repo is for quickly determining bacterial growth rates from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed Jupyter Notebooks or JupyterLab. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools.
 
 
 ## Scientific background
@@ -44,7 +44,6 @@ As many other non-essential column labels and attributes as desired can be desig
 
 
 ## Path and directory (folder) setup
-
 Make sure this script is saved in the same folder as a folder labeled 'xlsx' containing your plate reader data files saved with the .xlsx extension.
 
 Additionally, please modify the file_target variable to a string that is contained in the data files you want to analyze. Multiple data files can be analyzed at once if they all contain this same string. Note that these files will each be assigned a unique label by file name under the 'Experiment' column in the resulting dataframe.
@@ -52,6 +51,9 @@ Additionally, please modify the file_target variable to a string that is contain
 For example, using file_target 'expt' will find and analyze '/expt1.xlsx', '/expt2.xlsx', and '/expt3.xlsx' in the 'xlsx' folder together, then tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
 
 
-
+## To-do
+Possible future updates:
+* Adding support for fitting growth data to the Gompertz curve
+* More metadata functionality when analyzing large datasets with many experiments
 
 
