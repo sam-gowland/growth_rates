@@ -43,5 +43,15 @@ As many other non-essential column labels and attributes as desired can be desig
  ["Assay", "Temperature", "Value", "Experiment"]
 
 
+## Path and directory (folder) setup
+
+Make sure this script is saved in the same folder as a folder labeled 'xlsx' containing your plate reader data files saved with the .xlsx extension.
+
+Additionally, please modify the file_target variable to a string that is contained in the data files you want to analyze. Multiple data files can be analyzed at once if they all contain this same key string. Note that these files will be each have a unique label by file name under the 'Experiment' column in the resulting dataframe.
+
+For example, using file_target 'expt' will find and analyze '/expt1.xlsx', '/expt2.xlsx', and '/expt3.xlsx' in the 'xlsx' folder together, then tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
+
+|---
+
 
 
