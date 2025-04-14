@@ -1,6 +1,6 @@
 # growth_rates
 
-This repository is for quickly determining microbial growth rates in high-throughput from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed **Jupyter Notebooks** or **JupyterLab**. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools.
+This repository is for quickly determining microbial growth rates in high-throughput from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed **Jupyter Notebooks** or **JupyterLab**. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools, as Anaconda will make installing package dependencies (see below) much easier.
 
 
 ## Scientific background
@@ -79,6 +79,21 @@ Sometimes in science (especially when working with tiny bugs with messy computer
 
 ## Extensibility
 One of the primary motivations for this script is the ability to automate analysis of growth rate data in high-throughput. As such, it's designed to accept and analyze as many data files as you'd like to give it at once. For best results, make sure variable column labels match across all analyzed files.
+
+## Dependencies
+growth_rates has the following package dependencies:
+* glob
+* pandas
+* numpy
+* scipy
+* re
+* warnings
+* os
+* pathlib
+* math
+* time
+* functools
+
 
 ## To-do
 ### Possible future updates:
