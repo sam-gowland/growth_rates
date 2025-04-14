@@ -20,10 +20,10 @@ Shown in the image below you can see the first three phases of the growth of bac
 ## Statistical regression analysis and window picking
 
 In order to find the best model of exponential phase, the "raw" OD600 data is first log-transformed, generating a linear relationship between time and ln(OD600) for the exponential phase that can be modeled using the LinearRegression tool in scikit-learn. However, this relationship is only linear for a short time during exponential phase, so this program applies a sliding window algorithm to identify the best fit during exponential phase. This algorithm attempts linear regressions across the entire range of data at various window "sizes", then selects the best fit by maximizing the coefficient of determination (R^2) of the fitted line. To best model data, several further constraints are included with exact values based on trial-and-error, but these values may need to be adjusted with differing culture conditions:
-1. OD600 values are forced to increase at least ~4.5-fold over the time window to filter out non-exponential phase fits
-2. OD600 value at the end of the fitted time window must be at least ~0.05 to filter out fits from noise at low absorbances
-3. Best-fit R^2 value must be >0.99 to classify as a valid fit to filter out fitting to subpar data
-4. Minimum window size must include at least 100 minutes of culture time and 8 measurements
+1. OD600 values are forced to increase at least ~4.5-fold over the time window to filter out non-exponential phase fits.
+2. OD600 value at the end of the fitted time window must be at least ~0.05 to filter out fits from noise at low absorbances.
+3. Best-fit R^2 value must be >0.99 to classify as a valid fit to filter out fitting to subpar data.
+4. Minimum window size must include at least 100 minutes of culture time and 8 measurements.
 
 The code determining all of these constraints can be found in the "well_fitter" function and its "find_linear_regime" sub-function.
 
