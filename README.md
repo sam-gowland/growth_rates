@@ -1,6 +1,6 @@
 # growth_rates
 
-This repository is for quickly determining microbial growth rates in high-throughput from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed Jupyter Notebooks or JupyterLab. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools.
+This repository is for quickly determining microbial growth rates in high-throughput from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed **Jupyter Notebooks** or **JupyterLab**. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools.
 
 
 ## Scientific background
@@ -27,7 +27,7 @@ However, this relationship is only linear for a short time during exponential ph
 1. OD600 values are forced to increase at least ~4.5-fold over the time window to filter out non-exponential phase fits.
 2. OD600 value at the end of the fitted time window must be at least ~0.05 to filter out fits from noise at low absorbances.
 3. Best-fit R^2 value must be >0.99 to classify as a valid fit to filter out fitting to subpar data.
-4. Minimum window size must include at least 100 minutes of culture time and 8 measurements.
+4. Window must must include at least 100 minutes of culture time and 8 measurements.
 
 The code determining all of these constraints can be found in the "well_fitter" function and its "find_linear_regime" sub-function.
 
