@@ -63,7 +63,7 @@ Make sure this script is saved in the same folder as a folder labeled 'xlsx' con
 
 Additionally, ***you will need to modify the file_target variable to a string that is contained in the data files you want to analyze.*** Multiple data files can be analyzed at once if they all contain this same string. Note that these files will each be assigned a unique label by file name under the 'Experiment' column in the resulting dataframe.
 
-For example, using file_target 'expt' will find and analyze '/expt1.xlsx', '/expt2.xlsx', and '/expt3.xlsx' in the 'xlsx' folder together, and the script will tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
+For example, using file_target 'expt' will find and analyze '../xlsx/expt1.xlsx', '../xlsx/expt2.xlsx', and '../xlsx/expt3.xlsx' together, and the script will tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
 
 
 ## Outputs
