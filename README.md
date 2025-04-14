@@ -1,6 +1,6 @@
 # growth_rates
 
-This repo is for quickly determining bacterial growth rates from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed Jupyter Notebooks or JupyterLab. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools.
+This repository is for quickly determining microbial growth rates in high-throughput from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed Jupyter Notebooks or JupyterLab. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools.
 
 
 ## Scientific background
