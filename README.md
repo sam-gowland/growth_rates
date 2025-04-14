@@ -16,6 +16,15 @@ Shown in the image below you can see the first three phases of the growth of bac
 
 ![image](https://github.com/user-attachments/assets/f7947a17-3b5c-4a5b-89e1-7dd6dc9a4f9f)
 
+## Import from plate reader data
+This script currently functions on data exports with formatting that looks approximately like this:
+
+![image](https://github.com/user-attachments/assets/598d9131-9501-4cca-b728-b1b8e8343ebe)
+
+It's likely that if your plate reader export has significantly different formatting, you will need to write a function that modifies or replaces the kinetic_exporter function with the goal of returning a pandas DataFrame with the same structure as df_reps. i.e., tidy format with columns that include {'Time', 'Well', 'Value', 'Assay', 'Experiment', 'Sample', 'Media'} and any other descriptive columns as defined in Sheet 2. I'd greatly appreciate you then [creating a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to propose merging your function back into the main code so that others can benefit from your efforts!
+
+![image](https://github.com/user-attachments/assets/f056e574-1b6b-4385-a3e9-7177df355774)
+
 
 ## Statistical regression analysis and window picking
 
