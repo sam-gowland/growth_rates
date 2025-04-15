@@ -1,0 +1,7 @@
+# benchtools
+
+Are you a wet-lab scientist that finds yourself doing the same rote analysis on similar datasets over and over again for hours on end? 
+You'd like to automate some of your analysis workflows, but you're a specialist in wet-lab experimentation, not scripting. That's what
+**benchtools** is made for! The goal of this library is to automate many of the most common and time-consuming analysis tasks that bench 
+scientists face so that you can focus on learning and designing better experiments! In contrast to many programming spaces, this repository 
+is built with such coding beginners in mind. Welcome!
