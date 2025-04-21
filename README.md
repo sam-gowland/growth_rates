@@ -1,6 +1,10 @@
 # growth_rates
 
-This repository is for quickly determining microbial growth rates in high-throughput from plate reader OD600 data. It uses the iPython (Jupyter Notebooks) environment to import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization. To start, make sure you have installed **Jupyter Notebooks** or **JupyterLab**. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools, as Anaconda will make installing package dependencies (see below) much easier.
+This repository is for quickly determining microbial growth rates in high-throughput from plate reader OD600 data. It is available as both an .ipynb or a .py file, with a focus on being accessible to bench-facing scientists with little programming background. Such users are encouraged to use Jupyter Notebooks to interact with and run the code from the .ipynb file.
+
+This script will import raw plate reader data from an Excel export, find a best-fit linear regression to Time (x) v. ln(OD600) (y) data, quality check fits, and export fit parameters back to Excel for easy end-user data manipulation and visualization.
+
+(For programming beginners) to start, make sure you have installed **Jupyter Notebooks** or **JupyterLab**. I recommend using [Anaconda Navigator](https://www.anaconda.com/download) to download and access these tools, as Anaconda will make building your environment and installing package dependencies (see below) much easier.
 
 
 ## Scientific background
@@ -61,9 +65,9 @@ As many other non-essential column labels and attributes as desired can be desig
 ## Path and directory (folder) setup
 Make sure this script is saved in the same folder as a folder labeled 'xlsx' containing your plate reader data files saved with the .xlsx extension.
 
-Additionally, ***you will need to modify the file_target variable to a string that is contained in the data files you want to analyze.*** Multiple data files can be analyzed at once if they all contain this same string. Note that these files will each be assigned a unique label by file name under the 'Experiment' column in the resulting dataframe.
+The script will prompt you for a file-targeting string. Multiple data files can be analyzed at once if they all contain this same string (all files in the '../xlsx/' folder will be analyzed if no characters are returned in this user input). Note that these files will each be assigned a unique label by file name under the 'Experiment' column in the resulting dataframe.
 
-For example, using file_target 'expt' will find and analyze '../xlsx/expt1.xlsx', '../xlsx/expt2.xlsx', and '../xlsx/expt3.xlsx' together, and the script will tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
+For example, using a file-targeting string 'expt' will find and analyze '../xlsx/expt1.xlsx', '../xlsx/expt2.xlsx', and '../xlsx/expt3.xlsx' together, and the script will tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
 
 
 ## Outputs
