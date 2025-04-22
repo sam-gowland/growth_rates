@@ -16,7 +16,7 @@ In the sample column, use 'blank' for blank wells and 'drop' to ignore wells.
 
 
 
-## 3. Run the script in either Jupyter (.ipynb) or via the command line (.py). The program will ask for a file-targeting string to specify which files in the 'xlsx' folder to analyze (returning without entering any characters will analyze all available files). If running the .ipynb file, make sure to run both the first cell and second cell. Your results will be output to Excel files stored in the '/results/(your file_target)/' folder.
+## 3. Run the script in either Jupyter (.ipynb) or via the command line (.py). The program will ask for a file-targeting string to specify which files in the 'xlsx' folder to analyze (returning without entering any characters will analyze all available files). If running the .ipynb file, make sure to run both the first cell and second cell. Your results will be output to Excel files stored in the './results/<your file target>/' folder.
 
 
 ![image](https://github.com/user-attachments/assets/1611daa3-1ce0-45bd-852d-16659d37083d)
