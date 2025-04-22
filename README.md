@@ -65,9 +65,9 @@ As many other non-essential column labels and attributes as desired can be desig
 ## Path and directory (folder) setup
 Make sure this script is saved in the same folder as a folder labeled 'xlsx' containing your plate reader data files saved with the .xlsx extension.
 
-The script will prompt you for a file-targeting string. Multiple data files can be analyzed at once if they all contain this same string (all files in the '../xlsx/' folder will be analyzed if no characters are returned in this user input). Note that these files will each be assigned a unique label by file name under the 'Experiment' column in the resulting dataframe.
+The script will prompt you for a file-targeting string. Multiple data files can be analyzed at once if they all contain this same string (all files in the './xlsx/' folder will be analyzed if no characters are returned in this user input). Note that these files will each be assigned a unique label by file name under the 'Experiment' column in the resulting dataframe.
 
-For example, using a file-targeting string 'expt' will find and analyze '../xlsx/expt1.xlsx', '../xlsx/expt2.xlsx', and '../xlsx/expt3.xlsx' together, and the script will tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
+For example, using a file-targeting string 'expt' will find and analyze './xlsx/expt1.xlsx', './xlsx/expt2.xlsx', and './xlsx/expt3.xlsx' together, and the script will tag each of the resulting subdatasets as 'expt1', 'expt2', and 'expt3' respectively.
 
 
 ## Outputs
